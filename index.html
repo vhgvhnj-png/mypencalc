@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="calculator-container">
+    <div class="header">
+        <h1>🐾 寵物年齡換算機 💖</h1>
+        <p class="description">來看看你的<strong style="color:#FF7B54;">小寶貝</strong>幾歲囉！</p>
+    </div>
+    
+    <div class="pet-icon-area">
+        <span id="petIcon" class="icon-display"></span>
+    </div>
+
+    <div class="input-group">
+        <label for="petType">選擇你的寵物：</label>
+        <select id="petType">
+            <option value="dog">🐶 狗狗</option>
+            <option value="cat">🐱 貓貓</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="birthDate"><strong style="color:#FF7B54;">小寶貝</strong>的生日：</label>
+        <input type="date" id="birthDate" value="2023-02-28">
+    </div>
+    
+    <button id="calculateBtn">✨ 計算年齡 ✨</button>
+
+    <div id="result" class="result-area">
+        <p>點擊「計算年齡」或重新整理畫面查看上次結果。</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <p id="formulaText">
+        <strong style="color: #6a0572;">公式資訊</strong>
+    </p>
+</footer>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

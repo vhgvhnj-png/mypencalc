@@ -1,0 +1,153 @@
+/* 載入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Noto+Sans+TC:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #F8F0E5; /* 溫暖的淺米色背景 */
+    color: #4A4A4A;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator-container {
+    background-color: #FFFFFF;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+}
+
+.header h1 {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: #FF7B54;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #7B7B7B;
+    margin-bottom: 25px; 
+}
+
+/* Icon 顯示樣式 */
+.pet-icon-area {
+    margin-bottom: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-display {
+    font-size: 5em; /* 放大 Unicode 符號 */
+    line-height: 1;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #E2F0F9; /* 背景圓圈 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.icon-display:hover {
+    transform: scale(1.05);
+}
+
+/* --- 以下為輸入與按鈕樣式 (維持不變) --- */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #5A5A5A;
+    font-size: 1.05em;
+}
+
+#petType,
+#birthDate {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #4A4A4A;
+    background-color: #FDFDFD;
+}
+
+#calculateBtn {
+    background-color: #FFC0CB;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(255, 192, 203, 0.3);
+}
+
+#calculateBtn:hover {
+    background-color: #FF99AA;
+    transform: translateY(-2px);
+}
+
+.result-area {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #FFD1DC;
+    border-radius: 15px;
+    background-color: #FFF7F9;
+    text-align: left;
+    min-height: 80px;
+    color: #5A5A5A;
+}
+
+.result-area h2 {
+    color: #FF7B54;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.result-area strong {
+    color: #6a0572;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.result-area hr {
+    border: none;
+    border-top: 1px solid #FFD1DC;
+    margin: 15px 0;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.footer p {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
