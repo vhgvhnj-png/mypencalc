@@ -13,6 +13,8 @@ body {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
+    /* 設置一個基本的字體大小，以便在移動設備上調整 */
+    font-size: 16px; 
 }
 
 .calculator-container {
@@ -150,4 +152,61 @@ body {
     border-radius: 10px;
     border: 1px solid #E0E0E0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 📱 響應式設計：針對小螢幕手機優化 (最大寬度 500px) */
+@media (max-width: 500px) {
+    /* 調整 body 邊距 */
+    body {
+        padding: 10px; /* 減少整體邊距 */
+    }
+
+    /* 調整計算機容器的內邊距和最大寬度 */
+    .calculator-container {
+        padding: 20px; /* 減少內邊距 */
+        border-radius: 10px; /* 稍微減少圓角 */
+        max-width: 100%; /* 讓它在小螢幕上可以佔滿寬度 (由 body 的 padding 控制邊界) */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 調整標題大小，使其更適合小螢幕 */
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .description {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    /* 調整圖標大小，使其更緊湊 */
+    .icon-display {
+        font-size: 4em; 
+    }
+    
+    .pet-icon-area {
+        height: 80px; /* 減少高度 */
+    }
+
+    /* 調整按鈕和輸入框的內邊距 */
+    #petType,
+    #birthDate {
+        padding: 10px;
+    }
+    
+    #calculateBtn {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+
+    /* 調整結果區的邊距 */
+    .result-area {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    /* 調整 Footer */
+    .footer {
+        margin-top: 15px;
+    }
 }
