@@ -154,11 +154,14 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* 📱 響應式設計：針對小螢幕手機優化 (最大寬度 500px) */
-@media (max-width: 500px) {
-    /* 調整 body 邊距 */
+/* 在螢幕寬度小於或等於 600px 時套用以下樣式 (適用於手機) */
+@media (max-width: 600px) {
     body {
-        padding: 10px; /* 減少整體邊距 */
+        font-size: 16px; /* 確保手機上有合理的基礎字體大小 */
+    }
+
+    .header h1 {
+        font-size: 1.8em;
     }
 
     /* style.css 建議 */
@@ -176,11 +179,6 @@ body {
         width: 100%; /* 確保表單元素在手機上佔滿可用寬度 */
         box-sizing: border-box; /* 確保 padding 不會增加總寬度 */
         margin-bottom: 15px;
-    }
-
-    /* 調整標題大小，使其更適合小螢幕 */
-    .header h1 {
-        font-size: 1.8em;
     }
 
     .description {
