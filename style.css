@@ -161,12 +161,21 @@ body {
         padding: 10px; /* 減少整體邊距 */
     }
 
-    /* 調整計算機容器的內邊距和最大寬度 */
+    /* style.css 建議 */
     .calculator-container {
-        padding: 20px; /* 減少內邊距 */
-        border-radius: 10px; /* 稍微減少圓角 */
-        max-width: 100%; /* 讓它在小螢幕上可以佔滿寬度 (由 body 的 padding 控制邊界) */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        width: 90%; /* 在手機上佔 90% 寬度 */
+        max-width: 500px; /* 在桌面裝置上不超過 500px */
+        margin: 0 auto; /* 置中 */
+        padding: 20px;
+    }
+
+    .input-group label,
+    .input-group select,
+    .input-group input[type="date"],
+    #calculateBtn {
+        width: 100%; /* 確保表單元素在手機上佔滿可用寬度 */
+        box-sizing: border-box; /* 確保 padding 不會增加總寬度 */
+        margin-bottom: 15px;
     }
 
     /* 調整標題大小，使其更適合小螢幕 */
